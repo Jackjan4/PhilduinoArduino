@@ -57,7 +57,7 @@
                {
                  "host": "i686-mingw32",
                  "archiveFileName": "micronucleus-2.04.zip",
-                 "url": "https://github.com/micronucleus/micronucleus/archive/2.04.zip",
+                 "url": "https://codeload.github.com/micronucleus/micronucleus/zip/2.04",
                  "checksum": "SHA-256:BEF865F00B3A742409E34E12BF905AFF17992ED0731D2F6B61EAF804FF07BE96",
                  "size": "6703453"
                },
