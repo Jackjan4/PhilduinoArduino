@@ -1,0 +1,22 @@
+# See: http://code.google.com/p/arduino/wiki/Platforms
+
+menu.cpu=Processor
+
+##############################################################
+
+
+philduino-tiny.name=Philduino Tiny
+philduino-tiny.upload.using=micronucleusprog
+philduino-tiny.upload.protocol=usb
+philduino-tiny.upload.tool=micronucleus
+philduino-tiny.upload.maximum_size=6012
+philduino-tiny.upload.maximum_data_size=512
+philduino-tiny.build.mcu=attiny85
+philduino-tiny.build.f_cpu=16000000L
+philduino-tiny.build.board=AVR_DIGISPARK
+philduino-tiny.build.core=tiny
+philduino-tiny.build.variant=digispark
+philduino-tiny.upload.wait_for_upload_port = false
+philduino-tiny.upload.use_1200bps_touch = false
+philduino-tiny.upload.disable_flushing = false
+

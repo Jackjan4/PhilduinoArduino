@@ -1,0 +1,5 @@
+micronucleusburn.name=Philduino Tiny
+micronucleusburn.communication=serial
+micronucleusburn.protocol=stk500v1
+micronucleusburn.program.tool=avrdude
+micronucleusburn.program.extra_params=-P{serial.port}
