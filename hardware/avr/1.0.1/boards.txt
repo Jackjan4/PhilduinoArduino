@@ -3,7 +3,7 @@
 menu.cpu=Processor
 
 ##############################################################
-
+## Philduino Tiny
 
 philduino-tiny.name=Philduino Tiny
 
@@ -22,10 +22,35 @@ philduino-tiny.upload.wait_for_upload_port = false
 philduino-tiny.upload.use_1200bps_touch = false
 philduino-tiny.upload.disable_flushing = false
 
-
 philduino-tiny.bootloader.tool=avrdude
 philduino-tiny.bootloader.low_fuses=0xE1
 philduino-tiny.bootloader.high_fuses=0xDD
 philduino-tiny.bootloader.extended_fuses=0xFE
 philduino-tiny.bootloader.file=tiny/t85_default.hex
 
+
+##############################################################
+## Philduino Tiny (Expert Mode)
+
+philduino-tiny-exp.name=Philduino Tiny (Expert Mode)
+
+philduino-tiny-exp.upload.protocol=usb
+philduino-tiny-exp.upload.tool=micronucleus
+philduino-tiny-exp.upload.maximum_size=6522
+philduino-tiny-exp.upload.maximum_data_size=512
+
+philduino-tiny-exp.build.mcu=attiny85
+philduino-tiny-exp.build.f_cpu=16000000L
+philduino-tiny-exp.build.board=AVR_PHILDUINOTINY
+philduino-tiny-exp.build.core=tiny
+philduino-tiny-exp.build.variant=tiny
+
+philduino-tiny-exp.upload.wait_for_upload_port = false
+philduino-tiny-exp.upload.use_1200bps_touch = false
+philduino-tiny-exp.upload.disable_flushing = false
+
+philduino-tiny-exp.bootloader.tool=avrdude
+philduino-tiny-exp.bootloader.low_fuses=0xE1
+philduino-tiny-exp.bootloader.high_fuses=0xDD
+philduino-tiny-exp.bootloader.extended_fuses=0xFE
+philduino-tiny-exp.bootloader.file=tiny/t85_default.hex

@@ -65,6 +65,9 @@ recipe.size.regex.eeprom=^(?:\.eeprom)\s+([0-9]+).*
 # AVR Uploader/Programmers tools
 # ------------------------------
 
+
+## micronuclues
+
 tools.micronucleus.path={runtime.tools.micronucleus.path}
 tools.micronucleus.cmd.windows=commandline/micronucleus.exe
 
@@ -73,12 +76,11 @@ tools.micronucleus.upload.params.quiet=
 tools.micronucleus.upload.pattern="{path}/{cmd}" --timeout 60 "{build.path}/{build.project_name}.hex"
  
 
-
+## avrdude
 
 tools.avrdude.path={runtime.tools.avrdude.path}
 tools.avrdude.cmd.path={path}/bin/avrdude
 tools.avrdude.config.path={runtime.tools.avrdude.path}/etc/avrdude.conf
-
 
 tools.avrdude.erase.params.verbose=
 tools.avrdude.erase.params.quiet=
@@ -91,8 +93,12 @@ tools.avrdude.bootloader.pattern="{cmd.path}" "-C{config.path}" {bootloader.verb
 
 
 
+
+
+
 # USB Default Flags
 # Default blank usb manufacturer will be filled it at compile time
 # - from numeric vendor ID, set to Unknown otherwise
+
 build.usb_manufacturer=
 build.usb_flags=
