@@ -1,6 +1,8 @@
 # See: http://code.google.com/p/arduino/wiki/Platforms
 
-menu.cpu=Processor
+# Menu options
+menu.clock=Clock
+
 
 ##############################################################
 ## Philduino Tiny
@@ -40,17 +42,25 @@ philduino-tiny-exp.upload.maximum_size=6522
 philduino-tiny-exp.upload.maximum_data_size=512
 
 philduino-tiny-exp.build.mcu=attiny85
-philduino-tiny-exp.build.f_cpu=16000000L
 philduino-tiny-exp.build.board=AVR_PHILDUINOTINY
 philduino-tiny-exp.build.core=tiny
 philduino-tiny-exp.build.variant=tiny
+
+# Clock frequencies
+philduino-tiny-exp.menu.clock.16_pll=16 MHz Internal PLL (default)
+philduino-tiny-exp.menu.clock.16_pll.build.f_cpu=16000000L
+philduino-tiny-exp.menu.clock.16_pll.bootloader.low_fuses=0xE1
+
+philduino-tiny-exp.menu.clock.8_rc=8 MHz Internal Calibrated RC
+philduino-tiny-exp.menu.clock.8_rc.build.f_cpu=8000000L
+philduino-tiny-exp.menu.clock.8_rc.bootloader.low_fuses=0xE1
+# This fuse is wrong
 
 philduino-tiny-exp.upload.wait_for_upload_port = false
 philduino-tiny-exp.upload.use_1200bps_touch = false
 philduino-tiny-exp.upload.disable_flushing = false
 
 philduino-tiny-exp.bootloader.tool=avrdude
-philduino-tiny-exp.bootloader.low_fuses=0xE1
 philduino-tiny-exp.bootloader.high_fuses=0xDD
 philduino-tiny-exp.bootloader.extended_fuses=0xFE
 philduino-tiny-exp.bootloader.file=tiny/t85_default.hex
